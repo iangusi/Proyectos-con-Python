@@ -246,14 +246,14 @@ class SimulacionGUI(tk.Tk):
         """Carga todas las imágenes necesarias para la simulación."""
         anchoCelda = self.ancho // self.columnas
         altoCelda = self.alto // self.filas
-        self.fondo = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\fondo.jpg").resize((self.ancho, self.alto)))
-        self.img_muestra = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\muestra.png").resize((anchoCelda, altoCelda)))
-        self.img_migaja = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\migaja.png").resize((anchoCelda, altoCelda)))
-        self.img_obstaculo = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\obstaculo.png").resize((anchoCelda, altoCelda)))
-        self.img_base = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\base.png").resize((anchoCelda, altoCelda)))
-        self.agenteX_img = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\agenteX.png").resize((anchoCelda, altoCelda)))
-        self.agenteY_img = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\agenteY.png").resize((anchoCelda, altoCelda)))
-        self.agenteZ_img = ImageTk.PhotoImage(Image.open(r"C:\Users\marse\OneDrive\Escritorio\escuela\UNIVERSIDAD\FIA\practica 3\proyectoB\agenteZ.png").resize((anchoCelda, altoCelda)))
+        self.fondo = ImageTk.PhotoImage(Image.open(r".\fondo.jpg").resize((self.ancho, self.alto)))
+        self.img_muestra = ImageTk.PhotoImage(Image.open(r".\muestra.png").resize((anchoCelda, altoCelda)))
+        self.img_migaja = ImageTk.PhotoImage(Image.open(r".\migaja.png").resize((anchoCelda, altoCelda)))
+        self.img_obstaculo = ImageTk.PhotoImage(Image.open(r".\obstaculo.png").resize((anchoCelda, altoCelda)))
+        self.img_base = ImageTk.PhotoImage(Image.open(r".\base.png").resize((anchoCelda, altoCelda)))
+        self.agenteX_img = ImageTk.PhotoImage(Image.open(r".\agenteX.png").resize((anchoCelda, altoCelda)))
+        self.agenteY_img = ImageTk.PhotoImage(Image.open(r".\agenteY.png").resize((anchoCelda, altoCelda)))
+        self.agenteZ_img = ImageTk.PhotoImage(Image.open(r".\agenteZ.png").resize((anchoCelda, altoCelda)))
 
     def actualizar_simulacion(self):
         """Actualiza la simulación y redibuja la interfaz cada 'retardo' milisegundos."""
